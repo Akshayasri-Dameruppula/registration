@@ -1,9 +1,9 @@
-&lt;! DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;Event Registration Form&lt;/title&gt;
-&lt;style&gt;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Event Registration Form</title>
+<style>
 body {
 font-family: Arial, sans-serif;
 background: #f2f2f2;
@@ -33,7 +33,6 @@ padding: 10px;
 border: none;
 border-radius: 5px;
 cursor: pointer;
-
 width: 100%;
 }
 button:hover {
@@ -42,28 +41,32 @@ background: #45a049;
 h2 {
 text-align: center;
 }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;form action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
-&lt;h2&gt;Event Registration&lt;/h2&gt;
+</style>
+</head>
+<body>
+<form action="/submit" method="POST">
+<h2>Event Registration</h2>
+<label for="name">Full name </lable>
+<input type="text" id="name" name="name" required>
+<label for="email">Email Address </lable>
+<input type="email" id="email" name="email" required>
+<label for="phone">Phone Number</lable>
+<input type="tel" id="phone" name="phone" required>
+<select>
+<label>Gender </lable>
+<option>Male</option>
+<option>Female</option>
+<option>Others</option>
+</select>
+<label for="event">Choose Event</lable>
+<select id="event" name="event">
+<option value="coding">Coding Contest </option>
+<option value="music">Music Show</option>
+</select>
+<button type="submit">Register</button>
+</form>
+</body>
+</html>
 
-&lt;label for=&quot;name&quot;&gt;Full Name&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
 
-&lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;
-&lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
 
-&lt;label for=&quot;phone&quot;&gt;Phone Number&lt;/label&gt;
-&lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; required&gt;
-
-&lt;label for=&quot;event&quot;&gt;Choose Event&lt;/label&gt;
-&lt;select id=&quot;event&quot; name=&quot;event&quot;&gt;
-&lt;option value=&quot;coding&quot;&gt;Coding Contest&lt;/option&gt;
-&lt;option value=&quot;debate&quot;&gt;Debate&lt;/option&gt;
-&lt;option value=&quot;music&quot;&gt;Music Show&lt;/option&gt;
-&lt;/select&gt;
-&lt;button type=&quot;submit&quot;&gt;Register&lt;/button&gt;
-&lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
